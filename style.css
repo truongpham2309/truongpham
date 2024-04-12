@@ -146,10 +146,18 @@ section::after {
   color: #fff;
   font-size: 24px;
 }
+.redirect {
+	color: white; 
+	font-size: 30px; 
+	position: relative;
+	z-index: 1000;
+}
 footer {
     color: white;
     text-align: center;
 	padding-bottom:20px;
+	position: relative;
+	z-index: 1000;
 }
 @media only screen and (max-width: 1200px) {
   .container {
