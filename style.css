@@ -146,7 +146,11 @@ section::after {
   color: #fff;
   font-size: 24px;
 }
-
+footer {
+    color: white;
+    text-align: center;
+	padding-bottom:20px;
+}
 @media only screen and (max-width: 1200px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
