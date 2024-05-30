@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mikrotik Viet Nam</title>
+	<link rel="stylesheet" type="text/css" href="img/css.css">
+    <meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-store, must-revalidate">		
+	<meta http-equiv="expires" content="-1">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+		
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+
+<div id="wrapbody">
+	<!-- $(if chap-id) -->
+	<form name="sendin" action="" method="post">
+		<input type="hidden" name="username">
+		<input type="hidden" name="password">
+		<input type="hidden" name="dst" value="">
+		<input type="hidden" name="popup" value="true">
+	</form>
+	<script type="text/javascript" src="img/jquery.js"></script>
+	<script type="text/javascript" src="img/md5.js"></script>
+	<script type="text/javascript">
+	//<!--
+	    function doLogin() {
+		return true;
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('' + document.login.password.value + '');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+	<!-- $(endif) -->
+	
+	<img id="clsDesk" src="img/backgroundforpc.jpg" width="100%"><img id="clsMobile" src="img/backgroundformobiles.jpg" width="100%">
+	
+	<!-- login form -->
+	<div id="login-form-wrap">
+		<div class="row02">
+			<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><img class="btn" src="img/connect.png"></a>
+		</div>
+		<p style="text-align: center;"></p> 				
+	</div>
+</div>
+
+<div id="bg-footer">
+	
+</div>
+</body></html>
