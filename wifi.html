@@ -104,9 +104,10 @@
 
     <script>
         function openNewWindow() {
-    // Đóng cửa sổ hiện tại (nếu có)
-    window.close();
-    // Mở liên kết Zalo mới
+    // Thoát khỏi ứng dụng hiện tại (nếu có)
+    window.open('', '_self').close();
+    
+    // Mở liên kết Zalo trong cửa sổ mới
     window.open('https://zalo.me/benhvienxuyena', '_blank');
 }
     </script>
