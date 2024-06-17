@@ -117,19 +117,22 @@
                 tục</a>
         </div>
     </div>
-    </div>
+    </div>    
+	<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var paramsString = new URLSearchParams(window.location.search);
 
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            var paramsString = new URLSearchParams(window.location.search);
-
-            var id = paramsString.get('id');
-            document.getElementById('link').setAttribute('href', 'https://zalo.me/' + id)
-            if (paramsString.get('auto') == '1') {
-                document.getElementById('link').click();
-            }
-        });
-    </script>
+        var id = paramsString.get('id');
+        var link = document.getElementById('link');
+        link.setAttribute('href', 'https://zalo.me/' + id);
+        
+        if (paramsString.get('auto') == '1') {
+            setTimeout(() => {
+                link.click();
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
+    });
+</script>
 
 
 
