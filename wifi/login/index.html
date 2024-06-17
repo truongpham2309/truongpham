@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,7 +106,7 @@
         var _running_diamondplaza = 0;
         var _login_option_used = '13';
         var _running_owner = 'demo';
-        var _running_tracking_splash_id = '79fda7ba-de79-49d8-a3db-dca110704de5';
+        var _running_tracking_splash_id = '';
         var _running_campaign_used = '0';
         var _running_campaign_id = '';
         var _running_google_appid = '96872117153-e64prbso3cit83ml9l41gtmoedin0qv3.apps.googleusercontent.com';
@@ -183,22 +182,22 @@
         };
 
         // FIXED
-        var _running_action_host = 'http://truongpham.id.vn/wifi/';
-        var _running_action_save_tracking_splash_page = 'http://cloud2.vnwifi.vn/ClientBusiness/TrackingSplashPage';
-        var _running_action_save_tracking_langding_page = 'http://cloud2.vnwifi.vn/ClientBusiness/TrackingLangdingPage';
-        var _running_action_save_fb = 'http://cloud2.vnwifi.vn/ClientBusiness/SaveFB';
-        var _running_action_save_google = 'http://cloud2.vnwifi.vn/ClientBusiness/SaveGoogle';
-        var _running_action_save_answer = 'http://cloud2.vnwifi.vn/ClientBusiness/SaveAnswer';
-        var _running_action_check_data = 'http://cloud2.vnwifi.vn/ClientBusiness/CheckData';
-        var _running_action_login_wifi = 'http://cloud2.vnwifi.vn/ClientBusiness/LoginPostRaw';
-        var _running_action_create_login_code_email = 'http://cloud2.vnwifi.vn/ClientBusiness/CreateLoginURLAndEmail';
-        var _running_action_create_login_code_sms = 'http://cloud2.vnwifi.vn/ClientBusiness/CreateLoginCodeAndSMS';
-        var _running_action_create_login_code_zalo = 'http://cloud2.vnwifi.vn/ClientBusiness/CreateLoginCodeAndZaloMS';
-        var _running_action_update_ip = 'http://cloud2.vnwifi.vn/ClientBusiness/UpdateIP';
-        var _running_frame_login = 'http://cloud2.vnwifi.vn/frame-login.html';
-        var _running_action_save_basic_infor = 'http://cloud2.vnwifi.vn/ClientBusiness/SaveUserBasicInfor';
-        var _running_action_tracking_script = 'http://cloud2.vnwifi.vn/ClientBusiness/TrackingBeforeLangdingPage/'+_running_langding_page_id;
-        var _running_action_save_error = 'http://cloud2.vnwifi.vn/ClientBusiness/SplashError';
+        var _running_action_host = 'http://truongpham.id.vn/wifi/login/';
+        var _running_action_save_tracking_splash_page = 'http://truongpham.id.vn/wifi/login/ClientBusiness/TrackingSplashPage';
+        var _running_action_save_tracking_langding_page = 'http://truongpham.id.vn/wifi/login/ClientBusiness/TrackingLangdingPage';
+        var _running_action_save_fb = 'http://truongpham.id.vn/wifi/login/ClientBusiness/SaveFB';
+        var _running_action_save_google = 'http://truongpham.id.vn/wifi/login/ClientBusiness/SaveGoogle';
+        var _running_action_save_answer = 'http://truongpham.id.vn/wifi/login/ClientBusiness/SaveAnswer';
+        var _running_action_check_data = 'http://truongpham.id.vn/wifi/login/ClientBusiness/CheckData';
+        var _running_action_login_wifi = 'http://truongpham.id.vn/wifi/login/ClientBusiness/LoginPostRaw';
+        var _running_action_create_login_code_email = 'http://truongpham.id.vn/wifi/login/ClientBusiness/CreateLoginURLAndEmail';
+        var _running_action_create_login_code_sms = 'http://truongpham.id.vn/wifi/login/ClientBusiness/CreateLoginCodeAndSMS';
+        var _running_action_create_login_code_zalo = 'http://truongpham.id.vn/wifi/login/ClientBusiness/CreateLoginCodeAndZaloMS';
+        var _running_action_update_ip = 'http://truongpham.id.vn/wifi/login/ClientBusiness/UpdateIP';
+        var _running_frame_login = 'http://truongpham.id.vn/wifi/frame-login.html';
+        var _running_action_save_basic_infor = 'http://truongpham.id.vn/wifi/login/ClientBusiness/SaveUserBasicInfor';
+        var _running_action_tracking_script = 'http://truongpham.id.vn/wifi/login/ClientBusiness/TrackingBeforeLangdingPage/'+_running_langding_page_id;
+        var _running_action_save_error = 'http://truongpham.id.vn/wifi/login/ClientBusiness/SplashError';
 
         var _post_type_form ='1';
         var _post_type_json_raw ='2';
@@ -213,7 +212,7 @@
         var _input_type_rating ='rating';
 
         var _http = 'http://';
-        var _portal_domain = 'truongpham.id.vn/wifi';
+        var _portal_domain = 'cloud2.vnwifi.com';
         var _need_redirect = '';
     </script>  
     <script>
@@ -291,7 +290,7 @@
             }
             var _account_kit_url = "https://www.accountkit.com/v1.0/basic/dialog/sms_login/";
             _account_kit_url += "?app_id="+_running_fb_appid;
-            _account_kit_url += "&redirect=http://cloud2.vnwifi.vn/splashpage/accountkitresponse";
+            _account_kit_url += "&redirect=http://truongpham.id.vn/wifi/login/splashpage/accountkitresponse";
             _account_kit_url += "&state="+_running_account_kit_state;
             _account_kit_url += "&country_code=84";
             _account_kit_url += "&locale=vi_VN";
@@ -303,7 +302,7 @@
             var _AccountKitPhone = document.getElementById("for-login-account-kit").value;
             var _account_kit_url = "https://www.accountkit.com/v1.0/basic/dialog/sms_login/";
             _account_kit_url += "?app_id="+_running_fb_appid;
-            _account_kit_url += "&redirect=http://cloud2.vnwifi.vn/splashpage/accountkitresponse";
+            _account_kit_url += "&redirect=http://truongpham.id.vn/wifi/login/splashpage/accountkitresponse";
             _account_kit_url += "&state="+_running_account_kit_state;
             _account_kit_url += "&country_code=84";
             _account_kit_url += "&locale=vi_VN";
@@ -2496,14 +2495,14 @@
     }
 </style>
 
-<div class="BG" id="BG1" style="background-image: url('http://truongpham.id.vn/wifi/login/templates/d20240617m1.jpg')"></div>
+<div class="BG" id="BG1" style="background-image: url('http://cdn2.vnwifi.vn/templates/users/demo/iao-din--uyn-/version_1/d20240617m1.jpg')"></div>
 <!--<div class="BG" id="BG2" style="background-image: url('http://cdn2.vnwifi.vn/templates/users/demo/iao-din--uyn-/version_1/B2BG.jpg')"></div>-->
 
 <div id="Container">
-    <img src="http://truongpham.id.vn/wifi/login/templates/Empty600x800.png" id="Empty600x800" class="Banner" />
+    <img src="http://cdn2.vnwifi.vn/templates/users/demo/iao-din--uyn-/version_1/Empty600x800.png" id="Empty600x800" class="Banner" />
     <div id="scroll"></div>
     
-    <img src="http://truongpham.id.vn/wifi/login/templates/d20240617m1.jpg" id="Banner1" class="Banner Data" />
+    <img src="http://cdn2.vnwifi.vn/templates/users/demo/iao-din--uyn-/version_1/d20240617m1.jpg" id="Banner1" class="Banner Data" />
     <!--<img src="http://cdn2.vnwifi.vn/templates/users/demo/iao-din--uyn-/version_1/B2.jpg" id="Banner2" class="Banner Data" />  -->
     
     <!--<input type="text" id="txtName" class="question-item" placeholder="Họ và tên" />-->
